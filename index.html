@@ -1,0 +1,142 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Tapestry&display=swap" rel="stylesheet">
+
+
+<body style="background-image: url('https://cdn.discordapp.com/attachments/960600120615899136/1014579212876787732/edfsf.jpg'); background-repeat: no-repeat; background-size: cover !important; margin:0;
+    flex-direction: row-reverse;display: -ms-flexbox;
+       
+       display: flex;
+       /* Center vertically */
+       align-items: center;
+       /*Center horizontaly */
+       justify-content: center;
+       /*Center horizontaly ie */
+       -ms-flex-pack: center;height:100vh;">
+
+<img id="pic" align=right src=https://i.postimg.cc/zX1qP4Pz/f48dc7a3c8b76eeaeb4b662660cc8426-preview-rev-1.png width=auto height=100% style="margin-right:-200px;transition: 5s;">
+
+
+<center style="margin-top: auto;
+    margin-bottom: auto;">
+<div style="background-color:#993333; border-style: double; border-color: #ffd700;">
+<font color="#ffd700" style="font-family: 'Grenze Gotisch', cursive;font-size:80px;"><b>Eleonóra Bardmark</b></font>
+ <br>
+
+ 
+<br>
+<div class="desc_text"style="
+    
+">
+<div>
+<img id="topF" align=center src=https://i.postimg.cc/WzwbpRyB/topFrame.png style="width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;">
+    </div>
+<p class="scrollable" style="font-family: 'Tapestry', cursive;font-size:20px;">
+Anybody entering her inn, or encountering her outside would soon take note of the girl's ever so welcoming smile and positive attitude. Those curious eyes of hers feel like they are reading you at all times. Perhaps you seen her before with a dishtub or empty barrel. Her teeth are crooked but kept well, and her cloathes adopted a constant smell of hops steam.
+<br>
+</p>
+<div>
+<img id="BottomF" align=center src=https://i.postimg.cc/sXFVpDCF/bottom-Frame.png style="width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;">
+    </div>
+</div>
+<br>
+</div>
+</center>
+
+<iframe width=0 height=0 src="https://www.youtube.com/embed/4C-_qmN5-mI?autoplay=1" title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen></iframe>
+
+
+
+<script>
+
+$(document).ready(function(){
+
+$('#pic').hide();
+$('#topF').hide();
+$('#BottomF').hide();
+$('font').hide();
+
+$('#pic').animate({"margin-right": '+=200'}, 1000);
+$('#pic').fadeTo(3000, 1.0);
+$('#topF').fadeTo(7000, 1.0);
+$('#BottomF').fadeTo(7000, 1.0);
+$('font').fadeTo(3000, 1.0);
+$(".desc_text").hover(function(){
+    $(this).find('p').animate({"height": '200'}, 500);
+    }, function(){
+    $(this).find('p').animate({"height": '100'}, 500);
+  });
+
+
+});
+
+</script>
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffd700; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd700; 
+}
+p{
+	display: inline-block;
+    opacity: 1;
+    max-height: 200px;
+    height: 100px;
+    overflow: auto;
+    width: 40%;
+    color: #ffd700;
+    text-align: left;
+    transition: 1s;
+   
+}
+p:hover{
+	
+}
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.scrollable {
+        
+
+        /* ie scrollbar color properties */
+        scrollbar-base-color: #ffd700;
+        scrollbar-face-color: #ffd700;
+        scrollbar-3dlight-color: #ffd700;
+        scrollbar-highlight-color: #ffd700;
+        scrollbar-track-color: #993333;
+        scrollbar-arrow-color: #ffd700;
+        scrollbar-shadow-color: #ffd700;
+        scrollbar-dark-shadow-color: #ffd700;
+        
+        
+  }
+  
+    
+    
+}
+</style>
